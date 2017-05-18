@@ -26,9 +26,7 @@ defined( 'WPINC' ) || die();
  */
 function cep_filter_http_request_args( $args, $url ) {
 	if ( false !== strpos( $url, 'api.wordpress.org/events' ) ) {
-		if ( isset( $args['ip'] ) ) {
-			unset( $args['ip'] );
-		}
+		unset( $args['ip'] );
 	}
 
 	return $args;

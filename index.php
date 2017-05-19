@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Community Events Privacy
  * Plugin URI:  https://wordpress.org/plugins/community-events-privacy
- * Description: Prevents WordPress from sending a user's IP address when attempting to determine which location to use for listing nearby WordPress community events.
+ * Description: Prevents WordPress from sending a user's IP address when determining a location to use for listing nearby WordPress community events.
  * Version:     0.1
  * Text Domain: community-events-privacy
- * Author:      WordPress Community Team
+ * Author:      WordPress.org Community Team
  * Author URI:  https://make.wordpress.org/community
  * License:     GPLv2 or later
  *

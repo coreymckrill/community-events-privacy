@@ -7,7 +7,7 @@ Tested up to: 4.8
 Stable tag: 0.1
 License: GPLv2 or Later
 
-Prevents WordPress from sending a user's IP address when attempting to determine which location to use for listing nearby WordPress community events.
+Prevents WordPress from sending a user's IP address when determining a location to use for listing nearby WordPress community events.
 
 == Description ==
 WordPress connects to an API at api.wordpress.org to get a list of upcoming WordPress community events near the current user. In order to improve accuracy when determining the location of the current user and get relevant events, WordPress includes a partially anonymized IP address for the user when it sends its request.

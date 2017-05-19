@@ -17,6 +17,10 @@ defined( 'WPINC' ) || die();
 /**
  * Remove the IP address from the http request args if the target URL is the Events API endpoint.
  *
+ * Note that this filter runs _after_ the debugging info is collected to add to the log when
+ * WP_DEBUG_LOG is set to true. So in the log, the request args will still include the IP address,
+ * but it won't actually be submitted in the request.
+ *
  * @since 0.1
  *
  * @param array  $args List of http request arguments.
@@ -26,7 +30,7 @@ defined( 'WPINC' ) || die();
  */
 function cep_filter_http_request_args( $args, $url ) {
 	if ( false !== strpos( $url, 'api.wordpress.org/events' ) ) {
-		unset( $args['ip'] );
+		unset( $args['body']['ip'] );
 	}
 
 	return $args;
